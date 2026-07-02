@@ -2,7 +2,11 @@ name: Second CI
 
 on: 
     push:
-
+      branches:
+        - main #If changes happen in main branch only, jenkin will trigger
+        - dev #If changes happen in main branch only, jenkin will trigger
+    #   paths: # If changes happen in these paths only, jenkin will trigger
+    #     - ""
     workflow_dispatch:
       
 jobs:
