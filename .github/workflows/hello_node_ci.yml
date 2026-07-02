@@ -20,8 +20,8 @@ jobs:
 
           - name: Install dependencies
             #working-directory: docker/app1-hello/node
-            run: npm ci # only works if your repository contains: package.json and package-lock.json 
-            # run: npm install #If there is no package-lock.json
+            #run: npm ci # only works if your repository contains: package.json and package-lock.json 
+            run: npm install #If there is no package-lock.json
 
           - name: Run Tests (If any)
             #working-directory: docker/app1-hello/node
